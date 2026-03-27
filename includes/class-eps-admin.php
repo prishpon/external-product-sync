@@ -73,6 +73,11 @@ class EPS_Admin
                             </label>
                         </td>
                     </tr>
+                    <p>
+                        <a href="<?php echo esc_url(wp_nonce_url(admin_url('admin-post.php?action=eps_manual_sync'), 'eps_manual_sync')); ?>" class="button button-primary">
+                            Run Manual Sync
+                        </a>
+                    </p>
                 </table>
                 <?php submit_button(); ?>
             </form>
